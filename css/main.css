@@ -103,7 +103,8 @@ body {
   z-index: -1000;
   opacity: 0;
 }
-.loader__one span::before, .loader__two span:nth-child(1)::before {
+.loader__one span::before,
+.loader__two span:nth-child(1)::before {
   content: "";
   position: absolute;
   bottom: -10rem;
@@ -111,7 +112,11 @@ body {
   width: 140%;
   height: 4rem;
   border-radius: 50%;
-  background: radial-gradient(rgba(255, 255, 255, 0.1), transparent, transparent);
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.1),
+    transparent,
+    transparent
+  );
 }
 .loader__one span {
   position: absolute;
@@ -123,15 +128,15 @@ body {
   background: var(--color-primary);
   border-radius: 50%;
   -webkit-animation: animateLoader ease-in-out 2s infinite;
-          animation: animateLoader ease-in-out 2s infinite;
+  animation: animateLoader ease-in-out 2s infinite;
 }
 .loader__one span:nth-child(2) {
   background: rgba(56, 109, 241, 0.05);
   -webkit-backdrop-filter: blur(1rem);
-          backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
   border: 1px solid rgba(255, 255, 255, 0.1);
   -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+  animation-delay: -1s;
 }
 
 .home {
@@ -145,7 +150,12 @@ body {
   opacity: 1;
   z-index: 10;
   transition: all 0.5s;
-  background-image: linear-gradient(to right, rgba(0, 122, 204, 0.8), rgba(30, 30, 30, 0.8)), url(../img/bg.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 122, 204, 0.8),
+      rgba(30, 30, 30, 0.8)
+    ),
+    url(../img/bg.jpg);
 }
 @media only screen and (max-width: 1000px) {
   .home {
@@ -201,7 +211,7 @@ body {
   width: 98%;
   height: 98%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 0.3s;
   border-radius: var(--big--border-raduis);
 }
@@ -256,7 +266,7 @@ body {
   top: 0;
   pointer-events: none;
   -webkit-animation: animate linear forwards infinite;
-          animation: animate linear forwards infinite;
+  animation: animate linear forwards infinite;
 }
 .skills {
   font-size: 1.6rem;
@@ -287,7 +297,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: fit;
-     object-fit: fit;
+  object-fit: fit;
 }
 
 .contactMe {
@@ -375,9 +385,9 @@ body {
   border: 0.1em solid var(--color-primary-dark);
   border-radius: var(--small-border-raduis);
   -webkit-animation: animateSquare 10s linear infinite;
-          animation: animateSquare 10s linear infinite;
+  animation: animateSquare 10s linear infinite;
   -webkit-animation-delay: calc(-1s * var(--i));
-          animation-delay: calc(-1s * var(--i));
+  animation-delay: calc(-1s * var(--i));
 }
 .aboutMe__square:nth-child(1) {
   top: 2em;
@@ -446,7 +456,8 @@ body {
   transform-style: preserve-3d;
   position: relative;
 }
-.btn::before, .btn::after {
+.btn::before,
+.btn::after {
   content: attr(title);
   position: absolute;
   top: 0;
@@ -504,7 +515,8 @@ body {
   transform-style: preserve-3d;
   position: relative;
 }
-.link::before, .link::after {
+.link::before,
+.link::after {
   content: attr(title);
   position: absolute;
   top: 0;
@@ -602,7 +614,8 @@ body {
   position: relative;
   transition: 0.5s;
 }
-.nav__link::before, .nav__link::after {
+.nav__link::before,
+.nav__link::after {
   content: attr(title);
   position: absolute;
   top: 0;
@@ -681,7 +694,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .form__group {
   width: 100%;
@@ -798,7 +811,12 @@ body {
   align-items: center;
 }
 .page:first-child {
-  background-image: linear-gradient(to right, rgba(51, 51, 51, 0.8), rgba(30, 30, 30, 0.8)), url(../img/bg.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(51, 51, 51, 0.8),
+      rgba(30, 30, 30, 0.8)
+    ),
+    url(../img/bg.jpg);
 }
 .page:first-child .page__content {
   background: transparent;
@@ -980,7 +998,7 @@ body {
   width: 3em;
   height: 3em;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media only screen and (max-width: 475px) {
   .footer__right {
@@ -1073,7 +1091,7 @@ body {
   border: 0.1rem solid var(--color-primary);
   border-radius: var(--small-border-raduis);
   -webkit-animation: animateLoader ease-in-out 2s infinite;
-          animation: animateLoader ease-in-out 2s infinite;
+  animation: animateLoader ease-in-out 2s infinite;
 }
 .loader span:nth-child(2) {
   background: rgba(255, 255, 255, 0.1);
@@ -1081,7 +1099,7 @@ body {
   backdrop-filter: blur(1rem);
   border: 0.1rem solid var(--color-primary-dark);
   -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+  animation-delay: -1s;
 }
 
 .slide {
@@ -1139,7 +1157,7 @@ body {
   width: 45%;
   height: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: var(--small-border-raduis);
   border: 0.1em solid var(--color-primary-dark);
 }
@@ -1161,6 +1179,9 @@ body {
   align-items: center;
   text-align: justify;
   padding: 1em;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media only screen and (max-width: 700px) {
   .slide__content p {
@@ -1203,7 +1224,8 @@ body {
   }
 }
 @-webkit-keyframes animateLoader {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-4rem, 0) rotate(0deg);
   }
   25% {
@@ -1217,7 +1239,8 @@ body {
   }
 }
 @keyframes animateLoader {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-4rem, 0) rotate(0deg);
   }
   25% {
@@ -1231,7 +1254,8 @@ body {
   }
 }
 @-webkit-keyframes animateSquare {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-4rem);
   }
   50% {
@@ -1239,7 +1263,8 @@ body {
   }
 }
 @keyframes animateSquare {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-4rem);
   }
   50% {
